@@ -25,7 +25,7 @@ static const char *ng0 = "C:/PIC/VHDL/mux21_df.vhd";
 
 
 
-static void work_a_2432477598_0988350311_p_0(char *t0)
+static void work_a_1013928214_0988350311_p_0(char *t0)
 {
     char *t1;
     char *t2;
@@ -96,9 +96,9 @@ LAB5:    t11 = (t0 + 1192U);
 }
 
 
-extern void work_a_2432477598_0988350311_init()
+extern void work_a_1013928214_0988350311_init()
 {
-	static char *pe[] = {(void *)work_a_2432477598_0988350311_p_0};
-	xsi_register_didat("work_a_2432477598_0988350311", "isim/mux21_df_isim_beh.exe.sim/work/a_2432477598_0988350311.didat");
+	static char *pe[] = {(void *)work_a_1013928214_0988350311_p_0};
+	xsi_register_didat("work_a_1013928214_0988350311", "isim/mux21_dfa_clk_isim_beh.exe.sim/work/a_1013928214_0988350311.didat");
 	xsi_register_executes(pe);
 }

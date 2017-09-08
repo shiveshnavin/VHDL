@@ -1,0 +1,28 @@
+Command line:
+   mux21_dfa_clk_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55696
+
+Sat Sep 09 01:07:34 2017
+
+
+ Elaboration Time: 0.3125 sec
+
+ Current Memory Usage: 845.709 Meg
+
+ Total Signals          : 8
+ Total Nets             : 4
+ Total Signal Drivers   : 4
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 5
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 367
+
+ Total Simulation Time: 1.23438 sec
+
+ Current Memory Usage: 1160.3 Meg
+
+Sat Sep 09 01:08:25 2017
+

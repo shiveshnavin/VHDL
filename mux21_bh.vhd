@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    00:29:46 09/09/2017 
+-- Create Date:    00:50:53 09/09/2017 
 -- Design Name: 
--- Module Name:    mux21_df - Behavioral 
+-- Module Name:    mux21_bh - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,17 +29,30 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity mux21_df is
-    Port ( i0,i1 : in  STD_LOGIC  ;
+entity mux21_bh is
+    Port ( i0 : in  STD_LOGIC;
+           i1 : in  STD_LOGIC;
            s : in  STD_LOGIC;
            o : out  STD_LOGIC);
-end mux21_df;
+end mux21_bh;
+--((not s) and a) or (s and b);
 
-architecture mux21_dfa of mux21_df is
+architecture Behavioral of mux21_bh is
+
 
 begin
- 
- o<= i0 when s='1' else i1 when s='0' ;
 
-end mux21_dfa;
+process
+	begin
+		
+		if s='1' then
+			o<=i0;
+		elsif s='0' then
+			o<=i1;
+		end if;
+		
+	end process;
+		
+
+end Behavioral;
 

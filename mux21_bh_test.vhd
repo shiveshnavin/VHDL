@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   00:34:28 09/09/2017
+-- Create Date:   00:52:48 09/09/2017
 -- Design Name:   
--- Module Name:   C:/PIC/VHDL/mux21_dfa_clk.vhd
+-- Module Name:   C:/PIC/VHDL/mux21_bh_test.vhd
 -- Project Name:  VHDL
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: mux21_df
+-- VHDL Test Bench Created by ISE for module: mux21_bh
 -- 
 -- Dependencies:
 -- 
@@ -32,21 +32,23 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY mux21_dfa_clk IS
-END mux21_dfa_clk;
+ENTITY mux21_bh_test IS
+END mux21_bh_test;
  
-ARCHITECTURE behavior OF mux21_dfa_clk IS 
+ARCHITECTURE behavior OF mux21_bh_test IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT mux21_df
+    COMPONENT mux21_bh
     PORT(
-         i1,i0 : IN  std_logic;
+         i0 : IN  std_logic;
+         i1 : IN  std_logic;
          s : IN  std_logic;
          o : OUT  std_logic
         );
     END COMPONENT;
     
+
 
    --Inputs 
    signal i1 : std_logic := '0';
@@ -61,19 +63,17 @@ ARCHITECTURE behavior OF mux21_dfa_clk IS
    constant i0_period : time := 10 ns;
    constant i1_period : time := 30 ns;
    constant s_period : time := 50 ns;
- 
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: mux21_df PORT MAP (
-          i0 ,
-			 i1 ,
-          s ,
-          o
+   uut: mux21_bh PORT MAP (
+          i0 => i0,
+          i1 => i1,
+          s => s,
+          o => o
         );
 
-   -- Clock process definitions
-   i0_process :process
+    i0_process :process
    begin
 		i0 <= '0';
 		wait for i0_period/2;
@@ -111,5 +111,6 @@ BEGIN
 
       wait;
    end process;
+
 
 END;

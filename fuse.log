@@ -1,17 +1,20 @@
-Running: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/PIC/VHDL/mux21_df_isim_beh.exe -prj C:/PIC/VHDL/mux21_df_beh.prj work.mux21_df 
+Running: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/PIC/VHDL/mux21_bh_test_isim_beh.exe -prj C:/PIC/VHDL/mux21_bh_test_beh.prj work.mux21_bh_test 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/PIC/VHDL/mux21_df.vhd" into library work
+Parsing VHDL file "C:/PIC/VHDL/mux21_bh.vhd" into library work
+WARNING:HDLCompiler:1369 - "C:/PIC/VHDL/mux21_bh.vhd" Line 45: Possible infinite loop; process does not have a wait statement
+Parsing VHDL file "C:/PIC/VHDL/mux21_bh_test.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture mux21_dfa of entity mux21_df
+Compiling architecture behavioral of entity mux21_bh [mux21_bh_default]
+Compiling architecture behavior of entity mux21_bh_test
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 VHDL Units
-Built simulation executable C:/PIC/VHDL/mux21_df_isim_beh.exe
-Fuse Memory Usage: 28884 KB
-Fuse CPU Usage: 1546 ms
+Compiled 5 VHDL Units
+Built simulation executable C:/PIC/VHDL/mux21_bh_test_isim_beh.exe
+Fuse Memory Usage: 29220 KB
+Fuse CPU Usage: 1640 ms

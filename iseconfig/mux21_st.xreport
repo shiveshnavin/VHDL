@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-09-09T01:05:59</DateModified>
+  <DateModified>2017-09-09T01:17:50</DateModified>
   <ModuleName>mux21_st</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/PIC/VHDL/iseconfig/and_gate.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/PIC/VHDL\</ImplementationReportsDirectory>
-  <DateInitialized>2017-09-09T01:05:59</DateInitialized>
+  <SavedFilePath>C:/PIC/VHDL/iseconfig/mux21_st.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/PIC/VHDL</ImplementationReportsDirectory>
+  <DateInitialized>2017-09-09T01:17:49</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    00:29:46 09/09/2017 
+-- Create Date:    00:57:35 09/09/2017 
 -- Design Name: 
--- Module Name:    mux21_df - Behavioral 
+-- Module Name:    mux21_st - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,17 +29,37 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity mux21_df is
-    Port ( i0,i1 : in  STD_LOGIC  ;
+entity mux21_st is
+    Port ( i0 : in  STD_LOGIC;
+           i1 : in  STD_LOGIC;
            s : in  STD_LOGIC;
            o : out  STD_LOGIC);
-end mux21_df;
+end mux21_st;
+--((not s) and a) or (s and b);
 
-architecture mux21_dfa of mux21_df is
+architecture Behavioral of mux21_st is
+
+component andg is
+	port(a,b : in bit; c : out bit);
+end component;
+
+
+component org is
+	port(a,b : in bit; c : out bit);
+end component;
+
+
+component notg is
+	port(a : in bit; b : out bit);
+end component;
 
 begin
- 
- o<= i0 when s='1' else i1 when s='0' ;
 
-end mux21_dfa;
+NT1: notg port map (s,not_s);
+AN1: andg port map (not_s,a,a_and_not_s);
+AN2: andg port map (s,b,s_and_b);
+OR1: org port map (a_and_not_s,s_and_b,o);
+ 
+
+end Behavioral;
 

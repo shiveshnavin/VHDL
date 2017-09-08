@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/PIC/VHDL/mux21_df_isim_beh.exe" -prj "C:/PIC/VHDL/mux21_df_beh.prj" "work.mux21_df" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/PIC/VHDL/mux21_bh_test_isim_beh.exe" -prj "C:/PIC/VHDL/mux21_bh_test_beh.prj" "work.mux21_bh_test" 
