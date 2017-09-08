@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/PIC/VHDL/and_clk_isim_beh.exe" -prj "C:/PIC/VHDL/and_clk_beh.prj" "work.and_clk" 
