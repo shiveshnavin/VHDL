@@ -21,55 +21,84 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/PIC/VHDL/and_gate.vhd";
-extern char *IEEE_P_2592010699;
-
-unsigned char ieee_p_2592010699_sub_1605435078_503743352(char *, unsigned char , unsigned char );
+static const char *ng0 = "C:/PIC/VHDL/mux21_df.vhd";
 
 
-static void work_a_3006959317_3212880686_p_0(char *t0)
+
+static void work_a_2432477598_0988350311_p_0(char *t0)
 {
     char *t1;
     char *t2;
     unsigned char t3;
-    char *t4;
-    unsigned char t5;
+    unsigned char t4;
+    char *t5;
     unsigned char t6;
     char *t7;
     char *t8;
     char *t9;
     char *t10;
     char *t11;
+    char *t12;
+    unsigned char t13;
+    unsigned char t14;
+    char *t15;
+    unsigned char t16;
+    char *t17;
+    char *t18;
+    char *t19;
+    char *t20;
+    char *t21;
 
 LAB0:    xsi_set_current_line(42, ng0);
-
-LAB3:    t1 = (t0 + 1032U);
+    t1 = (t0 + 1352U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 1192U);
-    t4 = *((char **)t1);
-    t5 = *((unsigned char *)t4);
-    t6 = ieee_p_2592010699_sub_1605435078_503743352(IEEE_P_2592010699, t3, t5);
-    t1 = (t0 + 2912);
+    t4 = (t3 == (unsigned char)3);
+    if (t4 != 0)
+        goto LAB3;
+
+LAB4:    t11 = (t0 + 1352U);
+    t12 = *((char **)t11);
+    t13 = *((unsigned char *)t12);
+    t14 = (t13 == (unsigned char)2);
+    if (t14 != 0)
+        goto LAB5;
+
+LAB6:
+LAB2:    t21 = (t0 + 2992);
+    *((int *)t21) = 1;
+
+LAB1:    return;
+LAB3:    t1 = (t0 + 1032U);
+    t5 = *((char **)t1);
+    t6 = *((unsigned char *)t5);
+    t1 = (t0 + 3072);
     t7 = (t1 + 56U);
     t8 = *((char **)t7);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);
     *((unsigned char *)t10) = t6;
     xsi_driver_first_trans_fast_port(t1);
+    goto LAB2;
 
-LAB2:    t11 = (t0 + 2832);
-    *((int *)t11) = 1;
-
-LAB1:    return;
-LAB4:    goto LAB2;
+LAB5:    t11 = (t0 + 1192U);
+    t15 = *((char **)t11);
+    t16 = *((unsigned char *)t15);
+    t11 = (t0 + 3072);
+    t17 = (t11 + 56U);
+    t18 = *((char **)t17);
+    t19 = (t18 + 56U);
+    t20 = *((char **)t19);
+    *((unsigned char *)t20) = t16;
+    xsi_driver_first_trans_fast_port(t11);
+    goto LAB2;
 
 }
 
 
-extern void work_a_3006959317_3212880686_init()
+extern void work_a_2432477598_0988350311_init()
 {
-	static char *pe[] = {(void *)work_a_3006959317_3212880686_p_0};
-	xsi_register_didat("work_a_3006959317_3212880686", "isim/and_clk_isim_beh.exe.sim/work/a_3006959317_3212880686.didat");
+	static char *pe[] = {(void *)work_a_2432477598_0988350311_p_0};
+	xsi_register_didat("work_a_2432477598_0988350311", "isim/mux21_df_isim_beh.exe.sim/work/a_2432477598_0988350311.didat");
 	xsi_register_executes(pe);
 }
